@@ -92,7 +92,7 @@ p {
     object-fit: cover;
 }
 
-.content {
+.content-container {
     display: flex;
     flex-grow: 1;
     color: var(--seashellWhite);
@@ -113,7 +113,7 @@ p {
     font-family: "Inder", sans-serif;
 }
 
-.content-supporting {
+.content-supporting-container {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -121,12 +121,7 @@ p {
     font-size: clamp(1.5rem, 1vw, 3rem);
 }
 
-.content-supporting-top {
-    display: flex;
-    flex-direction: row;
-}
-
-.content-supporting-bottom {
+.content-supporting {
     display: flex;
     flex-direction: row;
 }
@@ -235,13 +230,7 @@ p {
         width: 100%;
     }
 
-    .content-supporting-top {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-
-    .content-supporting-bottom {
+    .content-supporting {
         flex-direction: column;
         text-align: center;
         align-items: center;

@@ -136,7 +136,13 @@ p {
 }
 
 .supporting-img-large {
+    align-self: center;
+    width: 40vw;
+    height: 40vw;
     max-width: 500px;
+    max-height: 500px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
     padding: 15px;
     margin: 15px;
     background-color: var(--water);
@@ -169,12 +175,12 @@ p {
     font-family: "Inder", sans-serif;
 }
 
-@media screen and (width <=800px) {
+@media screen and (width <=810px) {
 
     H1 {
-        font-size: 7vw;
+        font-size: clamp(1.5rem, 3rem, 3rem);
         margin: 0;
-        align-self: center;
+        width: 60%;
     }
 
     header {
@@ -191,17 +197,19 @@ p {
     }
 
     #active-link {
-        font-size: 5vw;
+        font-size: clamp(1.5rem, 2rem, 3rem);
         padding: 5px 0px 0px 20px;
+        margin-left: 20px;
     }
 
     .inactive-pages {
-        font-size: 5vw;
+        font-size: clamp(1.5rem, 2rem, 3rem);
         padding: 5px 0px 0px 20px;
+        margin-left: 20px;
     }
 
     section h2 {
-        font-size: 5vw;
+        font-size: clamp(1.5rem, 1.60rem, 3rem);
         padding: 0;
         margin: 0;
     }
@@ -209,7 +217,7 @@ p {
     .content {
         display: flex;
         flex-wrap: wrap;
-        font-size: clamp(1.5rem, 4vw, 3rem);
+        font-size: clamp(1.5rem, 1.5rem, 3rem);
         text-align: center;
     }
 
@@ -221,9 +229,8 @@ p {
 
     .home-content-right {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
-        justify-content: space-around;
         padding: 10px;
         width: 100%;
     }
@@ -240,17 +247,27 @@ p {
         align-items: center;
     }
 
+    .supporting-img-large {
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+    }
+
     #nav-links {
         display: block;
         position: relative;
         width: 100%;
     }
 
+    #logo-space{
+        display: flex;
+        width: 100%;
+        text-align: center;
+    }
+
     #hamburger-icon {
-        display: block;
-        font-size: 7vw;
-        position: absolute;
-        left: 2vw;
+        font-size: clamp(1.5rem, 3rem, 3rem);
+        width: 20%;
     }
 
     #active-link a {
@@ -263,7 +280,7 @@ p {
     }
 }
 
-@media screen and (width > 800px) {
+@media screen and (width > 810px) {
 
     #hamburger-icon {
         display: none;

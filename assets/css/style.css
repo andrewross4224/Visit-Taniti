@@ -41,9 +41,9 @@ nav ul {
 }
 
 nav ul li {
-    font-size: 2vw;
+    font-size: clamp(1.5rem, 2vw, 3rem);
     white-space: nowrap;
-    padding: 1vw!important;
+    padding: 1vw !important;
 }
 
 nav li a {
@@ -55,7 +55,6 @@ nav li a {
 section {
     flex-grow: 1;
     padding: 10px;
-    margin-top: -10px;
     background-color: var(--deepWater);
     display: flex;
     height: 100%;
@@ -63,12 +62,12 @@ section {
 
 section h2 {
     color: var(--water);
-    font-size: 2.5vw;
+    font-size: clamp(1.5rem, 3vw, 3rem);
     margin: 0;
 }
 
 H1 {
-    font-size: 3vw;
+    font-size: clamp(1.5rem, 5vw, 3rem);
     margin: 0;
 }
 
@@ -85,7 +84,7 @@ p {
     letter-spacing: normal;
 }
 
-img {
+#hero-img {
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -97,20 +96,54 @@ img {
     display: flex;
     flex-grow: 1;
     color: var(--seashellWhite);
-    font-size: 1.65vw;
+    font-size: clamp(1.5rem, 1vw, 3rem);
 }
 
-.content-left {
-    width: 75%;
+.home-content-left {
+    width: 60%;
     padding: 0 30px;
 }
 
-.content-right {
-    width: 25%;
+.home-content-right {
+    width: 40%;
+    display: flex;
+    flex: 1 1 50px;
+    padding-top: 3vw;
+    flex-direction: column;
+    font-family: "Inder", sans-serif;
+}
+
+.content-supporting {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    font-family: "Inder", sans-serif;
+    flex-grow: 1;
+    color: var(--seashellWhite);
+    font-size: clamp(1.5rem, 1vw, 3rem);
+}
+
+.content-supporting-top {
+    display: flex;
+    flex-direction: row;
+}
+
+.content-supporting-bottom {
+    display: flex;
+    flex-direction: row;
+}
+
+.content-supporting-text {
+    align-content: center;
+}
+
+.supporting-img-large {
+    max-width: 500px;
+    padding: 15px;
+    margin: 15px;
+    background-color: var(--water);
+}
+
+.home-content-right a {
+    margin-top: 25px;
 }
 
 .hyper-link {
@@ -126,7 +159,17 @@ img {
     color: var(--sunsetCoral);
 }
 
-@media screen and (width <=700px) {
+#active-link a {
+    color: var(--deepWater);
+}
+
+#book-now {
+    padding-right: 1.25em;
+    float: right;
+    font-family: "Inder", sans-serif;
+}
+
+@media screen and (width <=800px) {
 
     H1 {
         font-size: 7vw;
@@ -166,22 +209,35 @@ img {
     .content {
         display: flex;
         flex-wrap: wrap;
-        font-size: 4vw;
+        font-size: clamp(1.5rem, 4vw, 3rem);
+        text-align: center;
     }
 
-    .content-left {
+    .home-content-left {
         width: 100%;
         padding: 10px;
         height: fit-content;
     }
 
-    .content-right {
+    .home-content-right {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
         padding: 10px;
         width: 100%;
+    }
+
+    .content-supporting-top {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .content-supporting-bottom {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
     }
 
     #nav-links {
@@ -197,15 +253,24 @@ img {
         left: 2vw;
     }
 
+    #active-link a {
+        color: var(--sunsetCoral);
+    }
+
     .inactive-pages {
         display: none;
         padding: 0;
     }
 }
 
-@media screen and (width > 700px) {
+@media screen and (width > 800px) {
 
-        #hamburger-icon {
-            display: none;
+    #hamburger-icon {
+        display: none;
+    }
+
+    .inactive-pages {
+        display: block !important;
+        padding: 5px 0px 0px 20px;
     }
 }

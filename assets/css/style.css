@@ -54,7 +54,7 @@ nav li a {
 
 section {
     flex-grow: 1;
-    padding: 10px;
+    padding: 20px;
     background-color: var(--deepWater);
     display: flex;
     height: 100%;
@@ -92,7 +92,7 @@ p {
     object-fit: cover;
 }
 
-.content {
+.content-container {
     display: flex;
     flex-grow: 1;
     color: var(--seashellWhite);
@@ -113,7 +113,7 @@ p {
     font-family: "Inder", sans-serif;
 }
 
-.content-supporting {
+.content-supporting-container {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -121,12 +121,7 @@ p {
     font-size: clamp(1.5rem, 1vw, 3rem);
 }
 
-.content-supporting-top {
-    display: flex;
-    flex-direction: row;
-}
-
-.content-supporting-bottom {
+.content-supporting {
     display: flex;
     flex-direction: row;
 }
@@ -135,8 +130,21 @@ p {
     align-content: center;
 }
 
+.content-supporting-text li {
+    font-family: "Inder", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+}
+
 .supporting-img-large {
+    align-self: center;
+    width: 40vw;
+    height: 40vw;
     max-width: 500px;
+    max-height: 500px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
     padding: 15px;
     margin: 15px;
     background-color: var(--water);
@@ -159,6 +167,25 @@ p {
     color: var(--sunsetCoral);
 }
 
+#cuisine-supporting-pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cuisine-supporting-img {
+    aspect-ratio: 1;
+    width: 26%;
+    object-fit: cover;
+    padding: 1%;
+    margin: 1%;
+    background-color: var(--water);
+}
+
+#grocery-img {
+    float: right;
+}
+
 #active-link a {
     color: var(--deepWater);
 }
@@ -169,12 +196,12 @@ p {
     font-family: "Inder", sans-serif;
 }
 
-@media screen and (width <=800px) {
+@media screen and (width <=810px) {
 
     H1 {
-        font-size: 7vw;
+        font-size: clamp(1.5rem, 3rem, 3rem);
         margin: 0;
-        align-self: center;
+        width: 60%;
     }
 
     header {
@@ -191,17 +218,19 @@ p {
     }
 
     #active-link {
-        font-size: 5vw;
+        font-size: clamp(1.5rem, 2rem, 3rem);
         padding: 5px 0px 0px 20px;
+        margin-left: 20px;
     }
 
     .inactive-pages {
-        font-size: 5vw;
+        font-size: clamp(1.5rem, 2rem, 3rem);
         padding: 5px 0px 0px 20px;
+        margin-left: 20px;
     }
 
     section h2 {
-        font-size: 5vw;
+        font-size: clamp(1.5rem, 1.60rem, 3rem);
         padding: 0;
         margin: 0;
     }
@@ -209,7 +238,7 @@ p {
     .content {
         display: flex;
         flex-wrap: wrap;
-        font-size: clamp(1.5rem, 4vw, 3rem);
+        font-size: clamp(1.5rem, 1.5rem, 3rem);
         text-align: center;
     }
 
@@ -221,23 +250,22 @@ p {
 
     .home-content-right {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
-        justify-content: space-around;
         padding: 10px;
         width: 100%;
     }
 
-    .content-supporting-top {
+    .content-supporting {
         flex-direction: column;
         text-align: center;
         align-items: center;
     }
 
-    .content-supporting-bottom {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
+    .supporting-img-large {
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
     }
 
     #nav-links {
@@ -246,11 +274,15 @@ p {
         width: 100%;
     }
 
+    #logo-space{
+        display: flex;
+        width: 100%;
+        text-align: center;
+    }
+
     #hamburger-icon {
-        display: block;
-        font-size: 7vw;
-        position: absolute;
-        left: 2vw;
+        font-size: clamp(1.5rem, 3rem, 3rem);
+        width: 20%;
     }
 
     #active-link a {
@@ -263,7 +295,7 @@ p {
     }
 }
 
-@media screen and (width > 800px) {
+@media screen and (width > 810px) {
 
     #hamburger-icon {
         display: none;

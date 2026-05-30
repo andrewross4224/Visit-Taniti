@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inder&family=Knewave&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Visit Taniti</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo-space">
+            <a href="javascript:void(0);" id="hamburger-icon" onclick="openNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <H1><a href="index.html">Visit Taniti</a></H1>
+        </div>
+        <nav id="nav-links">
+            <ul>
+                <li class="inactive-pages"><a href="index.html">Home</a></li>
+                <li class="inactive-pages"><a href="lodging.html">Lodging</a></li>
+                <li class="inactive-pages"><a href="cuisine.html">Cuisine</a></li>
+                <li class="inactive-pages"><a href="activities.html">Activities</a></li>
+                <li id="active-link"><a>Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="content-container">
+            <div class="home-content-left">
+                <h2>No Culture Shock Here!</h2>
+                <!-- DISCLAIMER: TEXT CONTENT CREATED WITH THE HELP OF GENERATIVE AI -->
+                <p>
+                    Taniti is a welcoming destination where international travelers feel at home. While our indigenous
+                    population is proud of its local culture, English is widely spoken throughout Taniti City and in
+                    tourist areas like Yellow Leaf Bay and Merriton Landing. The local staff are multilingual and eager
+                    to assist, and our hospital features many English-speaking employees for your peace of mind. Also
+                    feel free to spend your US dollars as they are accepted widely on the island.
+                </p>
+                <h2>Local Laws & Safety</h2>
+                <p>
+                    To ensure a safe and enjoyable visit, please note the following important regulations:
+                <ul class="basic-ul">
+                    <li>Alcohol is not served or sold between the hours of midnight and 9:00 a.m. The legal drinking age
+                        is 18, though enforcement varies.</li>
+                    <li>If you choose to rent bicycles or helmets, helmets are required by law.</li>
+                    <li>While violent crime is very rare, be vigilant against pickpocketing in crowded areas.</li>
+                    <li>Taniti observes many national holidays; during these times, many attractions and restaurants
+                        will be closed, so plan accordingly.</li>
+                </ul>
+                </p>
+                <h2>Travel Arrangements</h2>
+                <p>
+                    Traveling to Taniti is convenient for visitors from the United States and Europe.
+                <ul class="basic-ul">
+                    <li>We use the U.S. Dollar (USD). However, many businesses also accept Euros and Yen, and banks
+                        facilitate currency exchange.</li>
+                    <li>Our power outlets are 120 volts, which is the same standard as in the United States—no adapters
+                        required.</li>
+                    <li>Public buses run from 5:00 a.m. to 11:00 p.m. daily. For more flexibility, rental cars and taxis
+                        are readily available.</li>
+                </ul>
+                </p>
+            </div>
+            <div class="home-content-right">
+                <div class="contact-container">
+                    <h2 style="text-align: center;">Contact Us</h2>
+                    <form action="#" method="POST">
+                        <div class="contact-form">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your full name" required>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your email address" required>
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(xxx) xxx-xxxx" required>
+                            <label for="message">Purpose of Visit</label>
+                            <textarea id="message" name="message"
+                                placeholder="Are you coming for business, pleasure, or other?" required></textarea>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                    <img src="./assets/images/money.jpg" class="resources-img" alt="Image of different currencies">
+                    <img src="./assets/images/biker-with-helmet.jpg" class="resources-img" alt="Two people on bikes wearing helmets">
+                    <img src="./assets/images/plane-taking-off.jpg" class="resources-img" alt="A plane taking off">
+                    <img src="./assets/images/american-outlet.jpg" class="resources-img" alt="A picture of an american outlet">
+                </div>
+            </div>
+    </section>
+    <script src="./assets/scripts/script.js"></script>
+</body>
+
+</html>

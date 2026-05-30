@@ -54,7 +54,7 @@ nav li a {
 
 section {
     flex-grow: 1;
-    padding: 10px;
+    padding: 20px;
     background-color: var(--deepWater);
     display: flex;
     height: 100%;
@@ -130,6 +130,13 @@ p {
     align-content: center;
 }
 
+.content-supporting-text li {
+    font-family: "Inder", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+}
+
 .supporting-img-large {
     align-self: center;
     width: 40vw;
@@ -158,6 +165,25 @@ p {
 
 #hamburger-icon {
     color: var(--sunsetCoral);
+}
+
+#cuisine-supporting-pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cuisine-supporting-img {
+    aspect-ratio: 1;
+    width: 26%;
+    object-fit: cover;
+    padding: 1%;
+    margin: 1%;
+    background-color: var(--water);
+}
+
+#grocery-img {
+    float: right;
 }
 
 #active-link a {

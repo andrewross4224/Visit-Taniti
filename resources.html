@@ -71,8 +71,8 @@
             <div class="home-content-right">
                 <div class="contact-container">
                     <h2 style="text-align: center;">Contact Us</h2>
-                    <form action="#" method="POST">
-                        <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="contact-form-container">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" placeholder="Your full name" required>
                             <label for="email">Email</label>
@@ -91,6 +91,16 @@
                     <img src="./assets/images/american-outlet.jpg" class="resources-img" alt="A picture of an american outlet">
                 </div>
             </div>
+        </div>
+        <div id="background-modal">
+            <dialog id="submit-modal">
+                <h2>Form Submited</h2>
+                <p>
+                    One of our advisors will get in contact soon!
+                </p>
+                <button onclick="hideModal()">Close</button>
+            </dialog>
+        </div>
     </section>
     <script src="./assets/scripts/script.js"></script>
 </body>

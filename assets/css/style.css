@@ -169,6 +169,10 @@ p {
     color: var(--sunsetCoral);
 }
 
+nav ul li a:hover {
+    color: var(--deepWater);
+}
+
 .basic-ul {
     font-family: "Inder", sans-serif;
     font-weight: 400;
